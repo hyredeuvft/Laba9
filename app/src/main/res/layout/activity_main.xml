@@ -7,34 +7,39 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <EditText
             android:id="@+id/etText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <requestFocus>
-            </requestFocus>
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <requestFocus></requestFocus>
         </EditText>
+
         <LinearLayout
             android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save">
-            </Button>
+                android:text="Save"></Button>
+
             <Button
                 android:id="@+id/btnLoad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Load">
-            </Button>
+                android:text="Load"></Button>
         </LinearLayout>
     </LinearLayout>
 
